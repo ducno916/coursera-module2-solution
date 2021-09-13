@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+p {
+  background-color: #ccc;
+  border: 3px solid black;
+  height: 160px;
+  padding: 36px 10px 10px;
+  overflow: hidden;
+}
+
+.content {
+  color: black;
+  position: relative;
+}
+
+#p1 {
+  background-color: #d59898;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#p2 {
+  background-color: #c14543;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#p3 {
+  background-color: #e5d198;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0 15px 15px 15px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: calc(100%/3);
+    float: left;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+/********** Mobile only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+}
